@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-heading: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+    --color-spa-beige: #fef3c7; /* Soft yellow tint for backgrounds */
+    --color-spa-beige-dark: #fde68a;
+    --color-spa-cream: #fffbeb;
+    --color-spa-olive: #2D3748; /* Re-mapped to Charcoal */
+    --color-spa-olive-light: #4A5568; /* Lighter charcoal */
+    --color-spa-olive-dark: #1A202C; /* Deep black/charcoal */
+    --color-spa-gold: #FFB000; /* Vibrant Yellow from image */
+    --color-spa-gold-light: #FFC107; /* Lighter vibrant yellow */
+    --color-spa-wood: #27272a; /* Dark gray */
+    --color-spa-wood-dark: #18181b; /* Very dark gray */
+    --color-spa-leaf: #a1a1aa; /* Gray text for dark backgrounds */
+    --color-spa-earth: #71717a;
+    --color-spa-stone: #d4d4d8;
+    --color-spa-sand: #f4f4f5;
+}
+
+/* Custom base styles */
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: var(--font-body);
+        background-color: #faf9f6; /* Very soft off-white/cream */
+        color: #333333;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-heading);
+    }
+}
+
+/* Custom utilities */
+@layer utilities {
+    .glass-effect {
+        @apply bg-white/70 backdrop-blur-md border border-white/20;
+    }
+    .text-balance {
+        text-wrap: balance;
+    }
+}
