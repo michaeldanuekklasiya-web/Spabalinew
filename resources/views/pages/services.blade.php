@@ -71,7 +71,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1620610141673-c15bc5e0da05?q=60&w=1080&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=60&w=1080&auto=format&fit=crop"
                 title="Hot Stone"
                 duration="60 mins / 90 mins"
                 price="Rp 350k / Rp 500k"
@@ -95,7 +95,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1537039017646-0b18f0967399?q=60&w=1080&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=60&w=1080&auto=format&fit=crop"
                 title="Massage & Body Scrub"
                 duration="60 mins / 90 mins"
                 price="Rp 350k / Rp 450k"
