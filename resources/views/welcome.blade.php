@@ -5,7 +5,7 @@
 <section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
     <!-- Cinematic Background -->
     <div class="absolute inset-0 w-full h-full">
-        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop" alt="Bali Spa Resort" class="absolute inset-0 w-full h-full object-cover" loading="eager">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=60&w=1080&auto=format&fit=crop" alt="Bali Spa Resort" class="absolute inset-0 w-full h-full object-cover" loading="eager">
         <div class="absolute inset-0 bg-gradient-to-r from-spa-olive-dark/90 via-spa-olive-dark/70 to-transparent"></div>
     </div>
 
@@ -67,7 +67,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <x-service-card 
-                image="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1974&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=60&w=1080&auto=format&fit=crop"
                 title="Balinese Massage"
                 duration="60 mins / 90 mins"
                 price="Rp 250k / Rp 350k"
@@ -75,7 +75,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=2070&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=60&w=1080&auto=format&fit=crop"
                 title="Deep Tissue"
                 duration="60 mins / 90 mins"
                 price="Rp 300k / Rp 450k"
@@ -83,7 +83,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=60&w=1080&auto=format&fit=crop"
                 title="Aromatherapy Massage"
                 duration="60 mins / 90 mins"
                 price="Rp 300k / Rp 450k"

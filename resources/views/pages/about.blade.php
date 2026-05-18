@@ -4,7 +4,7 @@
 <!-- Header Banner -->
 <section class="relative pt-32 pb-20 bg-spa-olive-dark">
     <div class="absolute inset-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop" alt="Spa Background" class="w-full h-full object-cover opacity-20">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=60&w=1080&auto=format&fit=crop" alt="Spa Background" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center mt-12">
         <span class="text-spa-gold tracking-[0.2em] uppercase text-sm font-semibold mb-4 block">Our Story</span>
@@ -18,7 +18,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="relative group">
                 <div class="absolute -inset-4 bg-spa-beige rounded-3xl transform rotate-3 transition-transform duration-500 group-hover:rotate-6"></div>
-                <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=2070&auto=format&fit=crop" alt="Spa Therapist" class="relative z-10 rounded-2xl shadow-xl w-full h-[500px] object-cover" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=60&w=1080&auto=format&fit=crop" alt="Spa Therapist" class="relative z-10 rounded-2xl shadow-xl w-full h-[500px] object-cover" loading="lazy">
                 <!-- Floating badge -->
                 <div class="absolute -bottom-8 -right-8 z-20 bg-white p-6 rounded-2xl shadow-2xl animate-bounce-slow flex items-center space-x-4 border border-spa-beige">
                     <div class="text-4xl text-spa-gold font-heading font-bold">15+</div>

@@ -4,7 +4,7 @@
 <!-- Header Banner -->
 <section class="relative pt-32 pb-20 bg-spa-olive-dark">
     <div class="absolute inset-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop" alt="Spa Packages" class="w-full h-full object-cover opacity-20">
+        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=60&w=1080&auto=format&fit=crop" alt="Spa Packages" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center mt-12">
         <span class="text-spa-gold tracking-[0.2em] uppercase text-sm font-semibold mb-4 block">Curated Experiences</span>

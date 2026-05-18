@@ -4,7 +4,7 @@
 <!-- Header Banner -->
 <section class="relative pt-32 pb-20 bg-spa-olive-dark">
     <div class="absolute inset-0 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop" alt="Spa Treatments" class="w-full h-full object-cover opacity-20">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=60&w=1080&auto=format&fit=crop" alt="Spa Treatments" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center mt-12">
         <span class="text-spa-gold tracking-[0.2em] uppercase text-sm font-semibold mb-4 block">Spa Menu</span>
@@ -23,7 +23,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             <x-service-card 
-                image="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1974&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=60&w=1080&auto=format&fit=crop"
                 title="Balinese Massage"
                 duration="60 mins / 90 mins"
                 price="Rp 250k / Rp 350k"
@@ -31,7 +31,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=2070&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=60&w=1080&auto=format&fit=crop"
                 title="Deep Tissue"
                 duration="60 mins / 90 mins"
                 price="Rp 300k / Rp 450k"
@@ -39,7 +39,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=60&w=1080&auto=format&fit=crop"
                 title="Aromatherapy Massage"
                 duration="60 mins / 90 mins"
                 price="Rp 300k / Rp 450k"
@@ -47,7 +47,7 @@
             />
 
             <x-service-card 
-                image="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=60&w=1080&auto=format&fit=crop"
                 title="Traditional Massage"
                 duration="60 mins / 90 mins"
                 price="Rp 230k / Rp 330k"
@@ -55,7 +55,7 @@
             />
 
             <x-service-card 
-                image="https://images.unsplash.com/photo-1552693673-1bf958298935?q=80&w=2073&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1552693673-1bf958298935?q=60&w=1080&auto=format&fit=crop"
                 title="Thai Massage"
                 duration="60 mins / 90 mins"
                 price="Rp 350k / Rp 450k"
@@ -63,7 +63,7 @@
             />
 
             <x-service-card 
-                image="https://images.unsplash.com/photo-1583416750470-965b2707b355?q=80&w=2070&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1583416750470-965b2707b355?q=60&w=1080&auto=format&fit=crop"
                 title="Lomi-Lomi Massage"
                 duration="60 mins / 90 mins"
                 price="Rp 300k / Rp 450k"
@@ -71,7 +71,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1620610141673-c15bc5e0da05?q=80&w=1974&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1620610141673-c15bc5e0da05?q=60&w=1080&auto=format&fit=crop"
                 title="Hot Stone"
                 duration="60 mins / 90 mins"
                 price="Rp 350k / Rp 500k"
@@ -79,7 +79,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=60&w=1080&auto=format&fit=crop"
                 title="Lymphatic Drainage"
                 duration="60 mins / 90 mins"
                 price="Rp 400k / Rp 550k"
@@ -87,7 +87,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1974&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=60&w=1080&auto=format&fit=crop"
                 title="Shiatsu Massage"
                 duration="60 mins / 90 mins"
                 price="Rp 300k / Rp 450k"
@@ -95,7 +95,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1537039017646-0b18f0967399?q=80&w=2070&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1537039017646-0b18f0967399?q=60&w=1080&auto=format&fit=crop"
                 title="Massage & Body Scrub"
                 duration="60 mins / 90 mins"
                 price="Rp 350k / Rp 450k"
@@ -103,7 +103,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=60&w=1080&auto=format&fit=crop"
                 title="Four Hand Massage"
                 duration="60 mins / 90 mins"
                 price="Rp 500k / Rp 950k"
@@ -111,7 +111,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=60&w=1080&auto=format&fit=crop"
                 title="Foot Massage"
                 duration="60 mins / 90 mins"
                 price="Rp 230k / Rp 300k"
@@ -119,7 +119,7 @@
             />
 
             <x-service-card 
-                image="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=60&w=1080&auto=format&fit=crop"
                 title="Facial Acupressure"
                 duration="60 mins / 90 mins"
                 price="Rp 300k / Rp 450k"
@@ -133,7 +133,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <x-service-card 
-                image="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2069&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=60&w=1080&auto=format&fit=crop"
                 title="Mani Pedi Cure"
                 duration="Full Treatment"
                 price="Rp 450k"
@@ -141,7 +141,7 @@
             />
 
             <x-service-card 
-                image="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1974&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=60&w=1080&auto=format&fit=crop"
                 title="Waxing"
                 duration="Regular / Brazilian"
                 price="Rp 600k / Rp 800k"
@@ -149,7 +149,7 @@
             />
             
             <x-service-card 
-                image="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=2069&auto=format&fit=crop"
+                image="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=60&w=1080&auto=format&fit=crop"
                 title="Creambath"
                 duration="60 mins / 90 mins"
                 price="Rp 250k / Rp 300k"
