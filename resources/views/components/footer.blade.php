@@ -38,10 +38,10 @@
                 <h3 class="text-white font-heading font-semibold text-lg mb-4">Treatments</h3>
                 <ul class="space-y-3">
                     <li><a href="{{ url('/treatments') }}" class="text-spa-leaf hover:text-spa-gold transition-colors text-sm">Balinese Massage</a></li>
-                    <li><a href="{{ url('/treatments') }}" class="text-spa-leaf hover:text-spa-gold transition-colors text-sm">Aromatherapy Retreat</a></li>
-                    <li><a href="{{ url('/treatments') }}" class="text-spa-leaf hover:text-spa-gold transition-colors text-sm">Hot Stone Therapy</a></li>
+                    <li><a href="{{ url('/treatments') }}" class="text-spa-leaf hover:text-spa-gold transition-colors text-sm">Aromatherapy Massage</a></li>
+                    <li><a href="{{ url('/treatments') }}" class="text-spa-leaf hover:text-spa-gold transition-colors text-sm">Hot Stone</a></li>
                     <li><a href="{{ url('/treatments') }}" class="text-spa-leaf hover:text-spa-gold transition-colors text-sm">Shiatsu Massage</a></li>
-                    <li><a href="{{ url('/treatments') }}" class="text-spa-leaf hover:text-spa-gold transition-colors text-sm">Radiance Facial</a></li>
+                    <li><a href="{{ url('/treatments') }}" class="text-spa-leaf hover:text-spa-gold transition-colors text-sm">Facial Acupressure</a></li>
                 </ul>
             </div>
 
@@ -66,13 +66,13 @@
                         <svg class="h-5 w-5 text-spa-gold mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
-                        <span class="text-spa-leaf text-sm">hello@binkeyspamassage.com</span>
+                        <span class="text-spa-leaf text-sm">binkeyspamassageoutcall@gmail.com</span>
                     </li>
                     <li class="flex items-center">
                         <svg class="h-5 w-5 text-spa-gold mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        <span class="text-spa-leaf text-sm">Open Daily: 09:00 AM - 10:00 PM</span>
+                        <span class="text-spa-leaf text-sm">Open Daily: 24 Hours</span>
                     </li>
                 </ul>
             </div>

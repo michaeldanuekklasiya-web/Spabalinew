@@ -69,25 +69,25 @@
             <x-service-card 
                 image="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1974&auto=format&fit=crop"
                 title="Balinese Massage"
-                duration="90 mins"
-                price="IDR 850K"
+                duration="60 mins / 90 mins"
+                price="Rp 250k / Rp 350k"
                 description="Traditional Balinese Healing Ritual To Reduce Stress & Rebalance Body."
             />
             
             <x-service-card 
                 image="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=2070&auto=format&fit=crop"
                 title="Deep Tissue"
-                duration="90 mins"
-                price="IDR 950K"
-                description="Sport Massage To Relax Tight Muscles. Uses Slow and Strong Pressure."
+                duration="60 mins / 90 mins"
+                price="Rp 300k / Rp 450k"
+                description="Sport Massage To Relax Tight Muscles Uses Slow and Strong Pressure."
             />
             
             <x-service-card 
                 image="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop"
                 title="Aromatherapy Massage"
-                duration="60 mins"
-                price="IDR 700K"
-                description="Balinese Massage enhanced with the therapeutic scents of essential oils."
+                duration="60 mins / 90 mins"
+                price="Rp 300k / Rp 450k"
+                description="Balinese Massage with Aromatherapy."
             />
         </div>
         
@@ -170,14 +170,189 @@
     </div>
 </section>
 
-<!-- Call to Action -->
-<section class="py-24 bg-spa-beige relative overflow-hidden">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <h2 class="text-4xl font-heading font-medium text-spa-olive-dark mb-6">Ready to Rejuvenate?</h2>
-        <p class="text-gray-600 text-lg mb-10">Book your appointment today and let us pamper you with our luxurious treatments.</p>
-        <a href="{{ url('/contact') }}" class="px-10 py-4 bg-spa-olive-dark hover:bg-spa-olive text-white rounded-full font-bold tracking-wide uppercase transition-all duration-300 shadow-xl inline-block">
-            Book an Appointment
-        </a>
+<!-- FAQ Section -->
+<section class="py-24 bg-white relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+            <span class="text-spa-gold tracking-[0.2em] uppercase text-sm font-semibold mb-2 block">Common Questions</span>
+            <h2 class="text-4xl md:text-5xl font-heading font-medium text-spa-olive-dark">Frequently Asked Questions</h2>
+        </div>
+        
+        <div class="max-w-3xl mx-auto divide-y divide-gray-200" x-data="{ selected: 1 }">
+            <!-- FAQ 1 -->
+            <div class="py-2">
+                <button class="w-full text-left py-4 flex justify-between items-center focus:outline-none" @click="selected !== 1 ? selected = 1 : selected = null">
+                    <span class="font-medium text-lg text-gray-900">What are your opening hours?</span>
+                    <span class="ml-6 flex-shrink-0 text-spa-gold">
+                        <svg class="h-6 w-6 transform transition-transform duration-200" :class="{'rotate-180': selected === 1}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="overflow-hidden transition-all duration-300 max-h-0" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                    <p class="text-gray-600 pb-4 text-base leading-relaxed">We are open 24 hours daily. We provide continuous professional home and hotel massage services whenever you need.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="py-2">
+                <button class="w-full text-left py-4 flex justify-between items-center focus:outline-none" @click="selected !== 2 ? selected = 2 : selected = null">
+                    <span class="font-medium text-lg text-gray-900">Do you provide home service?</span>
+                    <span class="ml-6 flex-shrink-0 text-spa-gold">
+                        <svg class="h-6 w-6 transform transition-transform duration-200" :class="{'rotate-180': selected === 2}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="overflow-hidden transition-all duration-300 max-h-0" x-ref="container2" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+                    <p class="text-gray-600 pb-4 text-base leading-relaxed">Yes, we offer professional massage and spa services directly to your home, villa, or hotel anywhere in Bali including Seminyak, Kuta, Canggu, Ubud, and Nusa Dua.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="py-2">
+                <button class="w-full text-left py-4 flex justify-between items-center focus:outline-none" @click="selected !== 3 ? selected = 3 : selected = null">
+                    <span class="font-medium text-lg text-gray-900">Should I book in advance?</span>
+                    <span class="ml-6 flex-shrink-0 text-spa-gold">
+                        <svg class="h-6 w-6 transform transition-transform duration-200" :class="{'rotate-180': selected === 3}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="overflow-hidden transition-all duration-300 max-h-0" x-ref="container3" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                    <p class="text-gray-600 pb-4 text-base leading-relaxed">While last-minute calls are welcome, we highly recommend booking in advance via WhatsApp to ensure your preferred therapist and time are available.</p>
+                </div>
+            </div>
+            
+            <!-- FAQ 4 -->
+            <div class="py-2">
+                <button class="w-full text-left py-4 flex justify-between items-center focus:outline-none" @click="selected !== 4 ? selected = 4 : selected = null">
+                    <span class="font-medium text-lg text-gray-900">Are your therapists certified?</span>
+                    <span class="ml-6 flex-shrink-0 text-spa-gold">
+                        <svg class="h-6 w-6 transform transition-transform duration-200" :class="{'rotate-180': selected === 4}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="overflow-hidden transition-all duration-300 max-h-0" x-ref="container4" x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+                    <p class="text-gray-600 pb-4 text-base leading-relaxed">Absolutely. All of our therapists are professional, well-trained, and highly experienced in providing the best massage and spa treatments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Book Appointment Section -->
+<section class="py-24 relative overflow-hidden" id="book">
+    <!-- Decorative background -->
+    <div class="absolute inset-0 bg-spa-beige z-0"></div>
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-spa-gold/20 blur-3xl z-0 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-spa-leaf/20 blur-3xl z-0 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+            <span class="text-spa-gold tracking-[0.2em] uppercase text-sm font-semibold mb-2 block">Reservation</span>
+            <h2 class="text-4xl md:text-5xl font-heading font-medium text-spa-olive-dark">Book Your Wellness Journey</h2>
+        </div>
+
+        <div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row border border-white">
+            
+            <!-- Map & Contact Side -->
+            <div class="lg:w-1/2 flex flex-col">
+                <div class="h-64 lg:h-80 w-full relative">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Jl.+Ancak+Sari,+Pecatu,+Kec.+Kuta+Sel.,+Kabupaten+Badung,+Bali&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                        class="absolute inset-0 w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="p-8 lg:p-12 bg-gradient-to-br from-spa-olive-dark to-[#3b4c3b] text-white flex-grow flex flex-col justify-center">
+                    <h4 class="text-2xl font-heading font-medium mb-6 text-spa-gold">Our Location & Contact</h4>
+                    <div class="space-y-5">
+                        <div class="flex items-start">
+                            <div class="bg-spa-gold/20 p-2.5 rounded-xl mr-4">
+                                <svg class="h-6 w-6 text-spa-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <span class="text-base leading-relaxed pt-1 text-spa-beige">Jl. Ancak Sari, Pecatu, Kec. Kuta Sel.,<br>Kabupaten Badung, Bali</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-spa-gold/20 p-2.5 rounded-xl mr-4">
+                                <svg class="h-6 w-6 text-spa-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <span class="text-base text-spa-beige">+62 878 5963 2289 <span class="text-spa-gold text-sm ml-1 font-semibold">(24/7 WhatsApp)</span></span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-spa-gold/20 p-2.5 rounded-xl mr-4">
+                                <svg class="h-6 w-6 text-spa-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <span class="text-base text-spa-beige">Home & Hotel Service Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Side -->
+            <div class="lg:w-1/2 p-8 lg:p-12 bg-white">
+                <form action="#" method="POST" class="space-y-6">
+                    <p class="text-spa-olive mb-6 text-base font-medium">Fill out the form below and we'll confirm your appointment instantly via WhatsApp.</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-spa-olive uppercase tracking-wider mb-2">Full Name</label>
+                            <input type="text" placeholder="John Doe" class="block w-full border-0 border-b-2 border-spa-beige bg-spa-beige/30 py-3 px-4 rounded-t-lg focus:border-spa-gold focus:ring-0 transition-colors sm:text-sm outline-none text-spa-olive-dark placeholder-gray-400">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-spa-olive uppercase tracking-wider mb-2">Phone / WhatsApp</label>
+                            <input type="text" placeholder="+62 812 3456 789" class="block w-full border-0 border-b-2 border-spa-beige bg-spa-beige/30 py-3 px-4 rounded-t-lg focus:border-spa-gold focus:ring-0 transition-colors sm:text-sm outline-none text-spa-olive-dark placeholder-gray-400">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-spa-olive uppercase tracking-wider mb-2">Select Treatment</label>
+                        <select class="block w-full border-0 border-b-2 border-spa-beige bg-spa-beige/30 py-3 px-4 rounded-t-lg focus:border-spa-gold focus:ring-0 transition-colors sm:text-sm outline-none text-spa-olive-dark">
+                            <option value="" disabled selected>Choose a service...</option>
+                            <option>Balinese Massage</option>
+                            <option>Deep Tissue Massage</option>
+                            <option>Aromatherapy Massage</option>
+                            <option>Hot Stone Therapy</option>
+                            <option>Other Treatment</option>
+                        </select>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-spa-olive uppercase tracking-wider mb-2">Date</label>
+                            <input type="date" class="block w-full border-0 border-b-2 border-spa-beige bg-spa-beige/30 py-3 px-4 rounded-t-lg focus:border-spa-gold focus:ring-0 transition-colors sm:text-sm outline-none text-spa-olive-dark">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-spa-olive uppercase tracking-wider mb-2">Time</label>
+                            <input type="time" class="block w-full border-0 border-b-2 border-spa-beige bg-spa-beige/30 py-3 px-4 rounded-t-lg focus:border-spa-gold focus:ring-0 transition-colors sm:text-sm outline-none text-spa-olive-dark">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-xs font-bold text-spa-olive uppercase tracking-wider mb-2">Location (Home/Hotel/Villa)</label>
+                        <input type="text" placeholder="e.g. The Westin Resort, Room 102" class="block w-full border-0 border-b-2 border-spa-beige bg-spa-beige/30 py-3 px-4 rounded-t-lg focus:border-spa-gold focus:ring-0 transition-colors sm:text-sm outline-none text-spa-olive-dark placeholder-gray-400">
+                    </div>
+
+                    <div class="pt-6">
+                        <button type="submit" class="w-full flex justify-center items-center py-4 px-6 border border-transparent rounded-xl shadow-lg shadow-green-500/30 text-sm font-bold text-white bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 uppercase tracking-wide transition-all duration-300 transform hover:-translate-y-1">
+                            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Book via WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
 @endsection
