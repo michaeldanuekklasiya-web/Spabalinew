@@ -12,12 +12,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Styles / Scripts -->
-    @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @else
-        <script src="https://cdn.tailwindcss.com"></script>
-    @endif
+    <!-- Tailwind CSS v4 CDN (No Node.js Required) -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-heading: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+            --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+            --color-spa-beige: #fef3c7;
+            --color-spa-beige-dark: #fde68a;
+            --color-spa-cream: #fffbeb;
+            --color-spa-olive: #2D3748;
+            --color-spa-olive-light: #4A5568;
+            --color-spa-olive-dark: #1A202C;
+            --color-spa-gold: #FFB000;
+            --color-spa-gold-light: #FFC107;
+            --color-spa-wood: #27272a;
+            --color-spa-wood-dark: #18181b;
+            --color-spa-leaf: #a1a1aa;
+            --color-spa-earth: #71717a;
+            --color-spa-stone: #d4d4d8;
+            --color-spa-sand: #f4f4f5;
+        }
+
+        @layer base {
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                font-family: var(--font-body);
+                background-color: #faf9f6;
+                color: #333333;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-family: var(--font-heading);
+            }
+        }
+
+        @layer utilities {
+            .glass-effect {
+                @apply bg-white/70 backdrop-blur-md border border-white/20;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+        }
+    </style>
 
     <!-- Alpine.js for lightweight interactivity -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
